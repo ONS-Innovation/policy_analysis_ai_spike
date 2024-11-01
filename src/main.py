@@ -1,3 +1,5 @@
+"""Module to compare the GitHub Usage Policy to GitHub Repositories."""
+
 import getpass
 import os
 
@@ -15,7 +17,7 @@ policy_document = genai.upload_file("./github_usage_policy.pdf")
 
 repository_information = genai.upload_file("./example_repository.txt")
 
-prompt = """
+PROMPT = """
     You are an assistant used to compare the GitHub Usage Policy to GitHub Repositories.
     You are given a GitHub Usage Policy document and information about a GitHub Repository.
     You need to compare the GitHub Usage Policy to the GitHub Repository and provide feedback on their compliance.
@@ -24,5 +26,5 @@ prompt = """
     Your response should have a summary statement at the end, highlighting areas that are not compliant and any action which need to be completed.
 """
 
-response = model.generate_content([prompt, policy_document, repository_information])
+response = model.generate_content([PROMPT, policy_document, repository_information])
 print(response.text)
