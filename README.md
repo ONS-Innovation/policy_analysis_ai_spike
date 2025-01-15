@@ -7,11 +7,11 @@ A Google Gemini AI tool used to answer questions about a given policy and assess
 The spike is now complete.
 
 The code within this repository:
-- can coneect to Google Gemini,
+- can connect to Google Gemini,
 - provide Gemini with a policy document and repository information stored as plain text,
 - assess the compliance of the repository.
 
-This provides a good baseline on how we would get a policy AI agent.
+This provides a good baseline on how we would create a policy AI agent.
 
 ## Next Steps
 
