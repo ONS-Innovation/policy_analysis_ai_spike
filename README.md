@@ -2,6 +2,10 @@
 
 A Google Gemini AI tool used to answer questions about a given policy and assess a repository's policy compliance.
 
+## Important Notice
+
+The investigation spike for this task has ended and the repository has been archived. This repository will receive no future updates or support.
+
 ## Spike Overview
 
 The spike is now complete.
